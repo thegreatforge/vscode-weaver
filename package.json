@@ -16,6 +16,10 @@
       {
         "command": "vscode-weaver.helloWorld",
         "title": "Hello World"
+      },
+      {
+        "command": "vscode-weaver.goWithPatternBoilerPlate",
+        "title": "Weaver: Go with pattern boilerplate"
       }
     ]
   },
