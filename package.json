@@ -4,7 +4,8 @@
   "description": "To generate boilerplate code",
   "repository": "https://github.com/thegreatforge/vscode-weaver",
   "publisher": "parthw-vscode",
-  "version": "0.0.3",
+  "license": "MIT",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.85.0"
   },
