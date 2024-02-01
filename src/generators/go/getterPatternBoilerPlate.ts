@@ -111,11 +111,6 @@ func (s ${structName}) Get${capitalizedAttribute}() ${pointerType} {
   return *s.${attribute}
 }`;
     }
-
-    return `
-func (s ${structName}) Get${capitalizedAttribute}() ${pointerType} {
-  return *s.${attribute}
-}`;
   }
 
   return `
