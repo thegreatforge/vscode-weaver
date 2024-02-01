@@ -62,7 +62,7 @@ function generateBuildFunction(structName: string): string {
   const uncapitalizedStructName =
     structName[0].toLowerCase() + structName.slice(1);
   return `
-func (builder *${uncapitalizedStructName}Builder) Build() (*${structName}, error) {
+func (builder *${uncapitalizedStructName}Builder) Build() (${structName}, error) {
   return builder.buildObj, nil
 }
   `;
@@ -77,12 +77,12 @@ function generateBuildStructAndFunc(structName: string): string {
 
   return `
 type ${uncapitalizedStructName}Builder struct {
-  buildObj *${structName}
+  buildObj ${structName}
 }
 
 func New${capatalizedStructName}Builder() *${uncapitalizedStructName}Builder {
   return &${uncapitalizedStructName}Builder{
-    buildObj: new(${structName}),
+    buildObj: ${structName}{},
   }
 }
   `;
