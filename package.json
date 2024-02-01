@@ -14,12 +14,16 @@
   "contributes": {
     "commands": [
       {
-        "command": "vscode-weaver.helloWorld",
-        "title": "Hello World"
-      },
-      {
         "command": "vscode-weaver.goWithPatternBoilerPlate",
         "title": "Weaver: Go with pattern boilerplate"
+      },
+      {
+        "command": "vscode-weaver.goGetterPatternBoilerPlate",
+        "title": "Weaver: Go getter pattern boilerplate"
+      },
+      {
+        "command": "vscode-weaver.goBuilderPatternBoilerPlate",
+        "title": "Weaver: Go builder pattern boilerplate"
       }
     ]
   },
