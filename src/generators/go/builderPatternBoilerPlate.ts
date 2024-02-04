@@ -39,9 +39,10 @@ export function goBuilderPatternBoilerPlate() {
       `${generateBuildStructAndFunc(structName)}`
     );
     for (const line of lines.slice(1, -1)) {
-      const lastSpaceIndex = line.lastIndexOf(" ");
-      const dataType = line.substring(lastSpaceIndex + 1);
-      const attributeString = line.substring(0, lastSpaceIndex);
+      const lineWithoutTags = line.split("`")[0].trim();
+      const lastSpaceIndex = lineWithoutTags.lastIndexOf(" ");
+      const dataType = lineWithoutTags.substring(lastSpaceIndex + 1);
+      const attributeString = lineWithoutTags.substring(0, lastSpaceIndex);
       const attributes = attributeString
         .split(",")
         .map((attribute) => attribute.trim());
