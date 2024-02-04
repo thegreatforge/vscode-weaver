@@ -19,7 +19,7 @@
 
 1. Open a Go file in Visual Studio Code.
 2. Select the struct for which you want to generate boilerplate code.
-3. Use the shortcut `Ctrl+Shift+P` to open the command palette and search for `vscode-weaver`.
+3. Use the shortcut `Ctrl+Shift+P` to open the command palette and search for `Weaver`.
 4. Choose the desired pattern (Getter, With, Builder) from the available options.
 5. The extension will generate and insert the corresponding boilerplate code in your Go file.
 
